@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="TempConvCSS.css">
+</head>
+<body>
+	<header>
+		<h1>Temperature Converter</h1>
+	</header>
+	<main>
+		<div class="form-container">
+			<form>
+				<label for="temperature-input">Enter a Valid Temperature:<span>Example's: 20C or 10.08F or 34.0K</span></label>
+				<input type="text" id="temperature-input" name="temperature" required>
+				<button type="button" id="convert-btn">Convert</button>
+				<label for="celsius-output">Temperature in Celsius:</label>
+				<input type="number" id="celsius-output" name="celsius" readonly>
+                <label for="fahrenheit-output">Temperature in Fahrenheit:</label>
+				<input type="number" id="fahrenheit-output" name="fahrenheit" readonly>
+                <label for="kelvin-output">Temperature in Kelvin:</label>
+				<input type="number" id="kelvin-output" name="kelvin" readonly>
+			</form>
+            <p id="invalidPara"></p>
+		</div>
+	</main>
+	<script src="TempConvJS.js"></script>
+</body>
+</html>
