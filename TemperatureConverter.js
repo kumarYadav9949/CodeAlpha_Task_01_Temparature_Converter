@@ -23,6 +23,8 @@ convertBtn.addEventListener('click', () => {
       fahrenheitOutput.value = Fc.toFixed(2);
       let Kc = 273 + temperature;
       kelvinOutput.value = Kc.toFixed(2);
+
+      invalidParaOutput.textContent = " ";
       break;
     case "K":
       let Ck = temperature - 273;
@@ -30,6 +32,7 @@ convertBtn.addEventListener('click', () => {
       let Fk = 32+((9*Ck)/5);
       fahrenheitOutput.value = Fk.toFixed(2);
       kelvinOutput.value = temperature.toFixed(2);
+      invalidParaOutput.textContent = " ";
       break;
     case "F":
       let Cf = ((temperature - 32)*5)/9;
@@ -39,6 +42,7 @@ convertBtn.addEventListener('click', () => {
 
       let Kf = 273 + Cf;
       kelvinOutput.value = Kf.toFixed(2);
+      invalidParaOutput.textContent = " ";
       break;  
     default:
       celsiusOutput.value = " ";
